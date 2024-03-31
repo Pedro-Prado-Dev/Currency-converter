@@ -1,0 +1,36 @@
+{
+    "name": "currency-converter",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "ts-node src/index.ts",
+        "start:prod": "npm run build && node dist/index.js",
+        "build": "tsc",
+        "prepare": "husky"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Pedro-Prado-Dev/Currency-converter.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Pedro-Prado-Dev/Currency-converter/issues"
+    },
+    "homepage": "https://github.com/Pedro-Prado-Dev/Currency-converter#readme",
+    "devDependencies": {
+        "@types/node": "^20.12.2",
+        "@typescript-eslint/eslint-plugin": "^7.4.0",
+        "@typescript-eslint/parser": "^7.4.0",
+        "eslint": "^8.57.0",
+        "eslint-config-standard": "^17.1.0",
+        "ts-node-dev": "^2.0.0",
+        "typescript": "^5.4.3"
+    },
+    "dependencies": {
+        "axios": "^1.6.8",
+        "husky": "^9.0.11"
+    }
+}
