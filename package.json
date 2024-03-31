@@ -7,7 +7,9 @@
         "start": "ts-node src/index.ts",
         "start:prod": "npm run build && node dist/index.js",
         "build": "tsc",
-        "prepare": "husky"
+        "prepare": "husky",
+        "test:unit": "jest",
+        "test:unit:report": "jest --collect-coverage"
     },
     "repository": {
         "type": "git",
@@ -21,11 +23,14 @@
     },
     "homepage": "https://github.com/Pedro-Prado-Dev/Currency-converter#readme",
     "devDependencies": {
+        "@types/jest": "^29.5.12",
         "@types/node": "^20.12.2",
         "@typescript-eslint/eslint-plugin": "^7.4.0",
         "@typescript-eslint/parser": "^7.4.0",
         "eslint": "^8.57.0",
         "eslint-config-standard": "^17.1.0",
+        "jest": "^29.7.0",
+        "ts-jest": "^29.1.2",
         "ts-node-dev": "^2.0.0",
         "typescript": "^5.4.3"
     },
