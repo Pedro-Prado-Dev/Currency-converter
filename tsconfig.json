@@ -10,7 +10,9 @@
     "skipLibCheck": true
   },
   "include": [
-    "src/**/*.ts",
-    "jest.config.ts" // Inclua aqui o caminho para o arquivo jest.config.ts
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "jest.config.ts" // Exclua o arquivo jest.config.ts da compilação do TypeScript
   ]
 }
